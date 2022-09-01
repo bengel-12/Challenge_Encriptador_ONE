@@ -1,0 +1,139 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+   /* margin: auto;*/
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    font-family: Helvetica;
+    background: blue;
+}
+
+.heater{
+    width: 100px;
+    float: left;
+    background: red;
+}
+
+.main{
+    background-color: pink;
+    width: 100%;
+    height: calc(100vh - 130px);
+   
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section_izquierda{
+    background-color: red;
+    width: 70%;
+    height: 100%;
+    border-radius: 24px;
+    float: none;
+    display: flex;
+    flex-wrap: wrap;
+/* 
+    float: left;
+    width: 70%;
+    height: 70%;
+    border-radius: 24px;
+    background: yellow;*/
+}
+
+.section_derecha{
+    background-color: aqua;
+    width: 30%;
+    height: 100%;
+    border-radius: 24px;
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.footer{
+    
+    background-color: blueviolet;
+    width: 100%;
+    height: 2.5%;
+    float: none;
+}
+
+.logoimg{
+    
+    margin: 1%;
+    margin-left: 5%;
+    float: inherit;
+}
+
+.texto-entrada{
+    float: left;
+    margin-left: 1%;
+    margin-top: 1%;
+    width: 97%;
+    height: 90%;
+    color: #0a3871;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background: #f3f4fc;
+    border-radius: 24px;
+    padding: 20px 0px 0px 0px;
+}
+
+#imgDer{
+    margin-top: 20%;
+    width: 90%;
+    height: auto;
+}
+
+#texto2{
+    float: left;
+    margin-left: 10%;
+    margin-top: 10%;
+    color: #0a3871;
+    width: 80%;
+    height: 15%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    resize: none;
+}
+
+#btn-encriptar{
+    padding: 10px;
+    width: 20%;
+    height: 5%;
+    border-radius: 24px;
+    margin-left: 15%;
+    background: #d8dfed;
+    
+    
+}
+
+#btn-desencriptar{
+    padding: 10px;
+    width: 20%;
+    height: 5%;
+    border-radius: 24px;
+    margin-left: 15%;
+    background: #d8dfed;
+    
+    
+
+}
+
+#copiar{
+    margin-left: 33%;
+    margin-top: 90%;
+    padding: 24px;
+    width: 20%;
+    height: 10%;
+    background: #d8dfed;
+    border-radius: 24px;
+    display: none;
+}

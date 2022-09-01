@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    }
+    
+body {
+    font-family: Helvetica;
+    font-size: 1.2rem;
+    min-height: 100%;
+}
+
+.grid-container > * {
+    padding: 0px;
+    border-radius: 4px; 
+    background: #E5E5E5;
+}
+
+.header {
+    grid-area: header;
+    padding: 3px;
+    background: #E5E5E5;
+}
+
+.logoimg{
+    margin: 1%;
+    margin-left: 5%;
+    float:inherit;
+}
+
+
+
+/*.main{
+    grid-area: main;
+    background-color: yellowgreen;
+}*/
+
+.aside1_izq {
+    grid-area: aside1_izq;
+    background: #E5E5E5;
+}
+ 
+.texto-entrada{
+    float: left;
+    margin-left: 10%;
+    margin-top: 1%;
+    width: 85%;
+    height: 73%;
+    color: #0a3871;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background: #E5E5E5;
+    border-radius: 24px;
+    padding: 20px 0px 0px 0px;
+    resize: none;
+}
+
+
+
+#imgDer{
+    margin-top: 40%;
+    width: 90%;
+    height: auto;
+}
+
+#btn-encriptar{
+    cursor: pointer;
+    font-family: 'Inter';
+    color: #FFFFFF;
+    padding: 20px;
+    width: 40%;
+    height: 10%;
+    border-radius: 24px;
+    margin-left:10%;
+    background: #0A3871;
+    flex-direction: row;
+}
+
+#btn-desencriptar {
+    cursor: pointer;
+    font-family: 'Inter';
+    color: #0A3871;
+    padding: 20px;
+    width: 40%;
+    height: 10%;
+    border-radius: 24px;
+    margin-top: 18px;
+    margin-left: auto;
+    background: #D8DFE8;
+    flex-direction: row;
+}
+
+#texto{
+    width: auto;
+    height: auto;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: auto;
+    text-align: center;
+    color: #343A40;
+}
+
+#copiar1{
+    cursor: pointer;
+    
+    color: #495057;
+    /*margin-left: 40%;
+    width: 25%;
+    font-size: 24px;
+    margin-top: 7px;
+    border-radius: 24px;*/
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+}
+
+#texto2{
+        
+    margin-left: 5%;
+    margin-top: none;
+    color: #495057;
+    width: 90%;
+    height: 30px;
+    border: none;
+    outline: none;
+    font-size: medium;
+    resize: none;
+}
+.texto3{
+    width: 70%;
+    height: 30px;
+
+    margin-left: 10%;
+    color: #495057;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: medium;
+    line-height: 15%; 
+}
+
+
+.aside2_der  {
+    grid-area: aside2_der;
+    background-color: #FFFFFF;
+    border-radius: 24px;
+}
+
+/*este grid nos ayuda a mover facilmente los contenedores, 
+simplemente cambiando la pocicion de los elementos en el css*/
+.grid-container{
+    
+    display: grid;
+    gap: 10px;
+    grid-template: 
+    "header" 40px
+    "aside1_izq" 
+    "aside2_der" auto/
+    100% 40% ;
+}
+
+@media (min-width: 769px) {
+.grid-container {
+  /*  grid-template-columns: 200px auto;
+    grid-template-rows: 100px 50px auto 100px;
+    grid-template-areas: 
+    "header header"
+    "aside1 aside1"
+    "asid2 aside2"
+*/
+
+    grid-template: 
+        "header header" 70px 
+
+        "aside1_izq aside2_der" auto
+         /
+        69% auto
+    ;
+} 
+}
